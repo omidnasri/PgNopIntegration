@@ -220,12 +220,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\PgProductIntegrationObjectContext.cs" />
+    <Compile Include="Data\PgProductMetaDataMap.cs" />
+    <Compile Include="Domain\PgProductMetaData.cs" />
+    <Compile Include="Infrastructure\DependencyRegister.cs" />
+    <Compile Include="PgProductIntegrationPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Description.txt" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
