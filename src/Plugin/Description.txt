@@ -1,0 +1,8 @@
+﻿Group: Payam Gostar Product Integration
+FriendlyName: PgProductIntegration
+SystemName: Plugin
+Version: 1.0
+SupportedVersions: 3.70
+Author: Septa team
+DisplayOrder: 1
+FileName: Septa.PgNopIntegration.Plugin.dll
