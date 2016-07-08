@@ -1,8 +1,8 @@
 ﻿using System;
-using Nop.Core.Plugins;
 using Septa.PgNopIntegration.Plugin.Data;
 using Septa.PgNopIntegration.Plugin.Domain;
 using Nop.Core.Data;
+using Nop.Core.Plugins;
 
 namespace Septa.PgNopIntegration.Plugin
 {
@@ -17,12 +17,18 @@ namespace Septa.PgNopIntegration.Plugin
             this._pgProductMetaDataRepository = pgProductMetaDataRepository;
         }
 
+        /// <summary>
+        /// Install plugin
+        /// </summary>
         public override void Install()
         {
             _pgProductIntegrationContext.Install();
             base.Install();
         }
 
+        /// <summary>
+        /// Uninstall plugin
+        /// </summary>
         public override void Uninstall()
         {
             _pgProductIntegrationContext.Uninstall();
